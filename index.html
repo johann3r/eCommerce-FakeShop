@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-eCommerce</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="headline-wrapper">
+      <h1>Super <span>Fake</span> Store</h1>
+    </section>
+    <section class="filterSortWrapper">
+      <form class="searchWrapper">
+        <input type="text" placeholder="Search by title" class="searchbar" />
+        <select name="Sort by" id="sortingByPrice">
+          <option value="">Sort by</option>
+          <option value="lowToHigh" id="lowToHigh">Price – Low to high</option>
+          <option value="highToLow" id="highToLow">Price – High to low</option>
+        </select>
+      </form>
+
+      <form class="filterWrapper">
+        <label for="">Filter by categories:</label>
+        <input type="submit" value="electronics" id="electronics" />
+        <input type="submit" value="jewelery" id="jewelery" />
+        <input type="submit" value="men's clothing" id="mensClothing" />
+        <input type="submit" value="women's clothing" id="womensClothing" />
+      </form>
+    </section>
+    <section class="productWrapper"></section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

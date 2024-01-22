@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./../fonts/Inter_VariableFont_slnt_wght.ttf);
+}
+
+@font-face {
+  font-family: "Mazius-Rg";
+  src: url(./../fonts/Mazius_Display_Regular.otf);
+}
+
+@font-face {
+  font-family: "Mazius-Xi";
+  src: url(./../fonts/Mazius_Display_Extraitalic.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 226, 226);
+  // background-color: #006aff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline-wrapper {
+  width: 100vw;
+  background-color: #fff;
+  background-image: url(./../images/sfs-bg-01.jpg);
+  background-position: center;
+  background-repeat: 0;
+  background-size: cover;
+  padding: 25vh;
+  h1 {
+    color: #006aff;
+    background-color: #fff;
+    padding: 16px;
+    font-size: 96px;
+    display: inline;
+    font-family: "Mazius-Rg";
+    span {
+      font-family: "Mazius-Xi";
+    }
+  }
+}
+
+.filterSortWrapper {
+  background-color: f1f1f1;
+  width: 100vw;
+  background-color: #006aff;
+  padding: 48px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: dashed 2px #006aff;
+
+  .searchWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    gap: 16px;
+
+    .searchbar {
+      grid-column: 1 / 4;
+      background-color: #fff;
+      padding: 16px 24px;
+      border: solid 2px #006aff;
+      border-radius: 50px;
+    }
+
+    select {
+      background-color: #fff;
+      padding: 8px 20px;
+      border: solid 2px #006aff;
+      border-radius: 50px;
+    }
+  }
+
+  .filterWrapper {
+    padding: 32px 32px 0px 32px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 16px;
+
+    label {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-family: "Mazius-Rg";
+      padding: 8px 20px;
+      color: #fff;
+    }
+    input {
+      display: inline-block;
+      font-size: 0.9rem;
+      grid-column: 1 / 4;
+      background-color: #dedede;
+      padding: 8px 20px;
+      border: none;
+      color: #006aff;
+      border-radius: 50px;
+    }
+
+    input:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.productWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  padding: 48px 0;
+  font-family: "Inter";
+  margin: 0 10vw;
+
+  article {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease-in;
+
+    .backgroundImage {
+      margin-top: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 180px;
+      margin-bottom: 32px;
+      transition: 0.5s ease-in;
+    }
+
+    h3 {
+      padding: 32px;
+      color: #000;
+    }
+
+    .priceAdd {
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 24px 24px 24px;
+      border-top: dashed 2px #006aff;
+      transition: 0.5s ease-in;
+      cursor: pointer;
+
+      span {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family: "Mazius-Rg";
+        padding: 8px 20px;
+        color: #006aff;
+        transition: 0.5s ease-in;
+      }
+
+      button {
+        display: inline-block;
+        font-size: 0.9rem;
+        grid-column: 1 / 4;
+        background-color: #006aff;
+        padding: 8px 20px;
+        border: none;
+        color: white;
+        border-radius: 50px;
+        transition: 0.5s ease-in;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.productWrapper {
+  article:hover {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px #0000003a;
+    border: solid 2px #006aff;
+
+    .backgroundImage {
+      margin-top: 22px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 200px;
+      margin-bottom: 14px;
+    }
+
+    .priceAdd {
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 24px 24px 24px;
+      // border-top: dashed 2px #006aff;
+      background-color: #006aff;
+
+      span {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family: "Mazius-Rg";
+        padding: 8px 20px;
+        color: #ffffff;
+      }
+
+      button {
+        display: inline-block;
+        font-size: 0.9rem;
+        grid-column: 1 / 4;
+        background-color: #ffffff;
+        padding: 8px 20px;
+        border: none;
+        color: #006aff;
+        border-radius: 50px;
+        box-shadow: 0px 4px 8px #0000003a;
+      }
+    }
+  }
+}
