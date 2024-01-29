@@ -35,16 +35,33 @@ body {
   background-position: center;
   background-repeat: 0;
   background-size: cover;
-  padding: 25vh;
-  h1 {
-    color: #006aff;
+  padding: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     padding: 16px;
-    font-size: 96px;
-    display: inline;
-    font-family: "Mazius-Rg";
+
+    h1 {
+      color: #006aff;
+      font-size: 96px;
+      display: inline;
+      font-family: "Mazius-Rg";
+      padding: 0 16px;
+    }
     span {
+      color: #006aff;
+      font-size: 96px;
+      display: inline;
       font-family: "Mazius-Xi";
+      padding: 0 16px;
     }
   }
 }
@@ -85,8 +102,6 @@ body {
     padding: 32px 32px 0px 32px;
     display: flex;
     justify-content: center;
-    justify-content: center;
-    gap: 16px;
 
     label {
       display: inline-block;
@@ -95,19 +110,24 @@ body {
       padding: 8px 20px;
       color: #fff;
     }
-    input {
-      display: inline-block;
-      font-size: 0.9rem;
-      grid-column: 1 / 4;
-      background-color: #dedede;
-      padding: 8px 20px;
-      border: none;
-      color: #006aff;
-      border-radius: 50px;
-    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      input {
+        display: inline-block;
+        font-size: 0.9rem;
+        grid-column: 1 / 4;
+        background-color: #dedede;
+        padding: 8px 20px;
+        border: none;
+        color: #006aff;
+        border-radius: 50px;
+      }
 
-    input:hover {
-      cursor: pointer;
+      input:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -224,4 +244,20 @@ body {
       }
     }
   }
+}
+
+@media screen and (max-width: 1005px) {
+  .headline-wrapper {
+    .title {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  // .filterWrapper {
+  //   .filter-by {
+  //     display: none;
+  //   }
+  // }
 }

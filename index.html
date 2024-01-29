@@ -8,7 +8,11 @@
   </head>
   <body>
     <section class="headline-wrapper">
-      <h1>Super <span>Fake</span> Store</h1>
+      <div class="title">
+        <h1>Super</h1>
+        <span>Fake</span>
+        <h1>Store</h1>
+      </div>
     </section>
     <section class="filterSortWrapper">
       <form class="searchWrapper">
@@ -21,11 +25,13 @@
       </form>
 
       <form class="filterWrapper">
-        <label for="">Filter by categories:</label>
-        <input type="submit" value="electronics" id="electronics" />
-        <input type="submit" value="jewelery" id="jewelery" />
-        <input type="submit" value="men's clothing" id="mensClothing" />
-        <input type="submit" value="women's clothing" id="womensClothing" />
+        <label class="filter-by" for="">Filter by:</label>
+        <div class="categories">
+          <input type="submit" value="electronics" id="electronics" />
+          <input type="submit" value="jewelery" id="jewelery" />
+          <input type="submit" value="men's clothing" id="mensClothing" />
+          <input type="submit" value="women's clothing" id="womensClothing" />
+        </div>
       </form>
     </section>
     <section class="productWrapper"></section>
