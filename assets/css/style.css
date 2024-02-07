@@ -227,5 +227,102 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 500px) {
+  body .headline-wrapper {
+    max-height: 50vh;
+    background-size: 200%;
+  }
+  body .filterSortWrapper {
+    padding: 24px 20px;
+  }
+  body .filterSortWrapper .searchWrapper select {
+    width: 120px;
+  }
+  body .categories .filterWrapper {
+    padding: 16px 20px;
+  }
+  body .categories .filterWrapper input {
+    font-size: 0.7rem;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid #006aff;
+    color: #006aff;
+  }
+  body .categories .filterWrapper input:hover {
+    cursor: pointer;
+    background-color: #dedede;
+    color: #006aff;
+    box-shadow: none;
+  }
+  body .productWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    padding: 0px 0;
+    font-family: "Inter";
+    margin: 0 10vw;
+  }
+  body .productWrapper article {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease-in;
+  }
+  body .productWrapper article .backgroundImage {
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 180px;
+    margin-bottom: 32px;
+    transition: 0.5s ease-in;
+  }
+  body .productWrapper article h3 {
+    padding: 32px;
+    color: #000;
+  }
+  body .productWrapper article .priceAdd {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 24px 24px;
+    background-color: #006aff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  body .productWrapper article .priceAdd span {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: "Mazius-Rg";
+    padding: 8px 20px;
+    color: #ffffff;
+  }
+  body .productWrapper article .priceAdd button {
+    display: inline-block;
+    font-size: 0.9rem;
+    grid-column: 1/4;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    border: none;
+    color: #006aff;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2274509804);
+  }
+  body .productWrapper article:hover {
+    box-shadow: none;
+    border: none;
+  }
+  body .productWrapper article:hover .backgroundImage {
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 180px;
+    margin-bottom: 32px;
+    transition: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
