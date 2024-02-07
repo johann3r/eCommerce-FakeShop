@@ -97,37 +97,40 @@ body {
       border-radius: 50px;
     }
   }
+}
+
+.categories {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .filterWrapper {
-    padding: 32px 32px 0px 32px;
-    display: flex;
+    padding: 24px 20px;
     justify-content: center;
 
-    label {
-      display: inline-block;
-      font-size: 1.5rem;
-      font-family: "Mazius-Rg";
-      padding: 8px 20px;
-      color: #fff;
+    input {
+      font-size: 0.9rem;
+      background-color: #dedede;
+      padding: 16px 16px;
+      margin: 8px;
+      border: none;
+      border: 2px solid #006aff;
+      color: #006aff;
+      border-radius: 50px;
     }
-    .categories {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      input {
-        display: inline-block;
-        font-size: 0.9rem;
-        grid-column: 1 / 4;
-        background-color: #dedede;
-        padding: 8px 20px;
-        border: none;
-        color: #006aff;
-        border-radius: 50px;
-      }
 
-      input:hover {
-        cursor: pointer;
-      }
+    input:hover {
+      cursor: pointer;
+      background-color: #006aff;
+      color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    input:active {
+      background-color: #006aff;
+      color: #ffffff;
     }
   }
 }
@@ -136,7 +139,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
-  padding: 48px 0;
+  padding: 0px 0;
   font-family: "Inter";
   margin: 0 10vw;
 

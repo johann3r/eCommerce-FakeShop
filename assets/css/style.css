@@ -89,42 +89,43 @@ body {
   border: solid 2px #006aff;
   border-radius: 50px;
 }
-.filterSortWrapper .filterWrapper {
-  padding: 32px 32px 0px 32px;
+
+.categories {
+  width: 100vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories .filterWrapper {
+  padding: 24px 20px;
   justify-content: center;
 }
-.filterSortWrapper .filterWrapper label {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-family: "Mazius-Rg";
-  padding: 8px 20px;
-  color: #fff;
-}
-.filterSortWrapper .filterWrapper .categories {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-.filterSortWrapper .filterWrapper .categories input {
-  display: inline-block;
+.categories .filterWrapper input {
   font-size: 0.9rem;
-  grid-column: 1/4;
   background-color: #dedede;
-  padding: 8px 20px;
+  padding: 16px 16px;
+  margin: 8px;
   border: none;
+  border: 2px solid #006aff;
   color: #006aff;
   border-radius: 50px;
 }
-.filterSortWrapper .filterWrapper .categories input:hover {
+.categories .filterWrapper input:hover {
   cursor: pointer;
+  background-color: #006aff;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.categories .filterWrapper input:active {
+  background-color: #006aff;
+  color: #ffffff;
 }
 
 .productWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
-  padding: 48px 0;
+  padding: 0px 0;
   font-family: "Inter";
   margin: 0 10vw;
 }
