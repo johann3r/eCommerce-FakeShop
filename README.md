@@ -4,7 +4,7 @@ The Super Fake Store is an ecommerce website prototype utilizing the open shop-p
 
 ### 🌍 Deployment
 
-Visit the result here:
+Check out the result here:
 https://johann3r.github.io/eCommerce-FakeShop/
 
 ### 👀 Let's take a closer look
